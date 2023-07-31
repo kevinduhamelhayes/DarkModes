@@ -1,0 +1,25 @@
+:root{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+*{
+  --background-body-1: #121120;
+  --background-body-2: #204829;
+  --text-main: #fff;
+  --text-button: #fff;
+  --text-muted: #70777f;
+  --links: #0076d1;
+  --focus: #0096bfab;
+  --border: #dbdbdb;
+  --code: #000;
+  --animation-duration: 0.1s;
+}
+body{
+  background-color: var(--background-body-1);
+  color: var(--text-main);
+  font-family: sans-serif;
+  padding: 1rem;
+  margin: 0;
+  transition: all 0.5s ease;
+}
