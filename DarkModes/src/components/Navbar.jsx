@@ -1,5 +1,5 @@
 import "./styles/Navbar.css"
-const Navbar = () => {
+const Navbar = ({ setDarkMode, darkMode }) => {
   return (
     <nav className="navbar">
       <div className="right">
@@ -10,11 +10,9 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="left">
-        <ul className="ul-nav- left">
-          <li className="li-nav-left">
-            Dark Mode
-          </li>
-        </ul>
+        <button className="btn-darkmode" onClick={() => setDarkMode(!darkMode)}>
+          Dark Mode
+        </button>
       </div>
     </nav>
   )
