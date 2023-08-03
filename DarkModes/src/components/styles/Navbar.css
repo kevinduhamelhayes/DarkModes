@@ -54,5 +54,5 @@
 .btn-darkmode:hover{
   background-color: #fff;
   color: #f2a365;
-  border: black 2px solid;
+  border: lightgray 2px solid;
 }

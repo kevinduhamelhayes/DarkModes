@@ -4,14 +4,14 @@ const Body = () => {
     <main className="body">
       <div className="body-container">
         <div className="body-container-left">
-          <figure>
+          <figure className="container-img">
             <img src="./public/profile.jpeg" alt="" />
           </figure>
           <h1 className="body-container-left-h1">
-            Hi, I'm <span className="body-container-left-h1-span">Kevin</span>
+            Hi, I'm Kevin Duhamel
           </h1>
-          <p className="body-container-left-p">I'm a web developer</p>
-          <p className="body-container-left-p">
+          <p className="body-container-left-p1">I'm a web developer</p>
+          <p className="body-container-left-p2">
             As a motivated Frontend Developer with a strong foundation in Python
             Backend development, I have a passion for creating engaging and
             user-friendly web experiences. My primary focus lies in mastering
