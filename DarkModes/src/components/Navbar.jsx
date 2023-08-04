@@ -11,7 +11,7 @@ const Navbar = ({ setDarkMode, darkMode }) => {
       </div>
       <div className="left">
         <button className="btn-darkmode" onClick={() => setDarkMode(!darkMode)}>
-          Dark Mode
+          {darkMode ? "Light Mode" : "Dark Mode"}
         </button>
       </div>
     </nav>

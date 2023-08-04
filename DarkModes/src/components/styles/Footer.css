@@ -38,7 +38,9 @@
   justify-content: center;
 }
 .ul-footer-left li{
+  font-size: 1.3rem;
   cursor: pointer;
+  border-radius: 50px;
   padding: 10px 20px;
   transition: all 0.5s ease;
 }
@@ -51,9 +53,9 @@
 }
 .li-footer-right {
   margin-right: 25px;
+  font-size: 1.3rem;
   background: -webkit-linear-gradient(left, var(--secondary-color), var(--primary-color));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-style: italic;
 
 }
