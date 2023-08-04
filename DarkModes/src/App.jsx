@@ -1,5 +1,4 @@
 import { useState } from "react"
-import "./App.css"
 import Body from "./components/Body"
 import Cards from "./components/Cards"
 import Contact from "./components/Contact"

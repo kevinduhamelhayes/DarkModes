@@ -1,19 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
 *{
+  font-family: 'Roboto', sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-
-
 .dark-mode {
-  background-color: black ;
-  color: white;
+  --primary-color: #ffe066;
+  --secondary-color: #f2a365;;
+  --dark-color: #fff;
+  --light-color: #333;
+  
+  --shadow-color: rgba(255,255,255,0.5);
 }
 .light-mode {
-  background-color: white;
-  color: black;
+  --primary-color: #f2a365;
+  --secondary-color: #ffe066;
+  --dark-color: #333;
+  --light-color: #fff;
+  --shadow-color: rgba(0,0,0,0.5);
 }
 .App{
+  background-color: var(--light-color);
+  color: var(--dark-color);
   transition: all 0.3s ease-in-out;
 }

@@ -11,7 +11,7 @@
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 1rem;
   border-radius: 0.5rem;
-  box-shadow: 0 0 0.5rem rgba(0,0,0,0.5);
+  box-shadow: 0 0 0.5rem var(--shadow-color);
 }
 .ul-footer-left,
 .ul-footer-right {
@@ -23,7 +23,6 @@
 .li-footer-left,
 .li-footer-right {
   margin-right: 15px;
-
   transition: color 0.3s;
 }
 .ul-footer-left{
@@ -39,23 +38,22 @@
   justify-content: center;
 }
 .ul-footer-left li{
-
   cursor: pointer;
   padding: 10px 20px;
   transition: all 0.5s ease;
-  text-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.5);
 }
 .ul-footer-left li:hover{
-  background-color: #f2a365;
+  background-color: var(--primary-color);
   border: none;
-  color: #fff;
+  color: var(--light-color);
   text-align: center;
   text-decoration: none;
 }
 .li-footer-right {
-  background: -webkit-linear-gradient(left, #e96b0b, #f0c002);
+  margin-right: 25px;
+  background: -webkit-linear-gradient(left, var(--secondary-color), var(--primary-color));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-style: italic;
-  margin-right: 0;
+
 }
