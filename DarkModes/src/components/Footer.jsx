@@ -11,9 +11,7 @@ const Footer = () => {
         </ul>
       </div>
       <div className="footer-right">
-        <ul className="ul-footer-right">
-          <li className="li-footer-right">lovingly created by Kevin Duhamel</li>
-        </ul>
+        lovingly created by Kevin Duhamel
       </div>
     </footer>
   )
