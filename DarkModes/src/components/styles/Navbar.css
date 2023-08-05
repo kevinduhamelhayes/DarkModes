@@ -1,8 +1,4 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 .navbar{
   padding: 1rem;
   display: flex;
@@ -55,4 +51,14 @@
   background-color: var(--secondary-color);
   color: var(--dark-color);
   border: var(--shadow-color) 2px solid;
+}
+.ul-navbar-right{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  list-style: none;
+}
+.li-navbar-icon{
+  color: var(--dark-color);
 }
