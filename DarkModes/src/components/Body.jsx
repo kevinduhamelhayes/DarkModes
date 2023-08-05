@@ -4,7 +4,7 @@ const Body = () => {
     <main className="body">
       <div className="body-container-left">
         <figure className="container-img">
-          <img className="img1" src="./public/profile.jpeg" alt="" />
+          <img className="img1" src="/public/profile.jpeg" alt="" />
         </figure>
         <h1 className="body-container-left-h1">Hi, I'm Kevin Duhamel</h1>
       </div>
