@@ -1,26 +1,27 @@
 import "./styles/Contact.css"
+
 const Contact = () => {
+  const handleDownload = () => {
+    const pdfUrl = "/curriculum+kevinduhamel.pdf" // Ruta correcta del PDF en public
+    const link = document.createElement("a")
+    link.href = pdfUrl
+    link.setAttribute("download", "curriculum_kevin_duhamel.pdf")
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+  }
+
   return (
     <div className="contact-container">
-      <button className="button-gradient-dark">
-        {" "}
-        <a
-          href="mailto:kevinduhamelh@gmail.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{
-            display: "block",
-            textDecoration: "none",
-            color: "inherit",
-          }}
-        >
-          Contact me
-        </a>
+      <button className="contact-button" onClick={() => window.open("mailto:kevinduhamelh@gmail.com")}>
+        Contact me
       </button>
-      <a href="./public/curriculum+kevinduhamel.pdf" download>
-        <button className="button-gradient-dark">Download My Info</button>
-      </a>
+      <button className="contact-button" onClick={handleDownload}>
+        Download My Info
+      </button>
     </div>
   )
 }
+
 export default Contact
+

@@ -3,36 +3,26 @@ import "./styles/Footer.css"
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="footer-left">
-        <ul className="ul-footer-left">
-          <li className="li-footer-left">Home</li>
-          <li className="li-footer-left">About</li>
-          <li className="li-footer-left">
-            {" "}
-            <a
-              href="mailto:kevinduhamelh@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                display: "block",
-                textDecoration: "none",
-                color: "inherit",
-              }}
-            >
+      {/* Enlaces de navegación */}
+      <nav className="footer-left">
+        <ul className="footer-nav">
+          <li onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Home</li>
+          <li onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}>About</li>
+          <li>
+            <a href="mailto:kevinduhamelh@gmail.com" target="_blank" rel="noopener noreferrer">
               Contact
             </a>
           </li>
         </ul>
-      </div>
+      </nav>
+
+      {/* Crédito del footer */}
       <div className="footer-right">
-
-
-
-        
-        lovingly created by Kevin Duhamel
+        <p>Lovingly created by <span>Kevin Duhamel</span></p>
       </div>
     </footer>
   )
 }
 
 export default Footer
+

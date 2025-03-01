@@ -1,48 +1,75 @@
-
-.cards-container{
-  margin-top: 30px;
+/* General container */
+.cards-container {
+  margin: 30px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-left: 50px;
-  margin-right: 50px;
-}
-.cards-h2{
-  font-size: 2.5rem;
-  font-weight: 600;
-  color: var(--primary-color);
-}
-.cards-container-right-p{
-  font-size: 1.4rem;
-  text-align: center;
-  letter-spacing: 1px;
-  line-height: 1.5;
-  font-weight: 400;
+  gap: 2rem;
   max-width: 1200px;
+  padding: 0 20px;
 }
 
-.stack-container-icons{
+/* Each card */
+.card {
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+  background: var(--light-background);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Titles */
+.cards-h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+/* Paragraphs */
+.cards-text {
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 1.6;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+/* Tech stack icons */
+.stack-icons {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 20px;
+}
+
+/* Icon containers */
+.icon-container {
+  display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-}
-.stack-icons{
-  display: flex;
-  gap: 1rem;
-  margin-top: 30px;
-}
-.image-stack{
-  transition: all 0.3s ease-in-out;
   background-color: var(--light-color);
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out;
 }
-.image-stack-python{
-  width: 60px;
-  height: 60px;
-  transform: scale(1.8);
+
+.icon-container:hover {
+  transform: scale(1.1);
+}
+
+/* Icons */
+.image-stack {
+  width: 50px;
+  height: 50px;
+}
+
+/* Python icon (larger) */
+.image-stack-python {
+  transform: scale(1.2);
 }
