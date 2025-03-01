@@ -11,13 +11,14 @@
   top: 0;
   left: 0;
   z-index: 1000;
-  transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 /* Navbar cuando se hace scroll */
 .navbar.scrolled {
-  background-color: var(--light-color);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  background-color: var(--bg-color);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 /* ====== LOGO ====== */
@@ -65,11 +66,14 @@
 
 .nav-icons a {
   color: var(--dark-color);
-  transition: color 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  opacity: 0.8;
 }
 
 .nav-icons a:hover {
   color: var(--primary-color);
+  opacity: 1;
+  transform: translateY(-2px);
 }
 
 /* Botón de modo oscuro */
@@ -79,11 +83,15 @@
   cursor: pointer;
   font-size: 1.5rem;
   color: var(--dark-color);
-  transition: transform 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  padding: 0.5rem;
+  border-radius: 50%;
 }
 
 .btn-darkmode:hover {
-  transform: scale(1.1);
+  transform: rotate(45deg);
+  background-color: var(--primary-color);
+  color: var(--light-color);
 }
 
 /* ====== MENÚ MÓVIL ====== */
